@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cfndxnjvnbfi5"]
+
+[ext_resource type="Script" uid="uid://bqkjtthg3iowb" path="res://dragao.gd" id="1_jjkpu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_3wb61"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jjkpu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jjkpu"]
+size = Vector3(0.99853516, 1, 1)
+
+[node name="dragao" type="CharacterBody3D" unique_id=1104468449]
+script = ExtResource("1_jjkpu")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1138146754]
+mesh = SubResource("BoxMesh_3wb61")
+surface_material_override/0 = SubResource("StandardMaterial3D_jjkpu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=495810038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0007324219, 0, 0)
+shape = SubResource("BoxShape3D_jjkpu")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1651177770]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.2588190, 0, -0.2588190, 0.9659258, 0, 1.5, 3)

@@ -1,0 +1,10 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Screenshots de debug (geradas automaticamente)
+screenshot.png
+screenshot.png.import
+
+# Documentos internos de trabalho (não fazem parte do código do jogo)
+metodo_de_acao.md
