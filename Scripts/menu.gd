@@ -215,7 +215,7 @@ func _on_jogar() -> void:
 	if _sfx_confirmar:
 		_sfx_confirmar.play()
 		await get_tree().create_timer(0.45).timeout
-	get_tree().change_scene_to_file("res://mundo.tscn")
+	get_tree().change_scene_to_file("res://Scenes/mundo.tscn")
 
 func _on_sair() -> void:
 	if _sfx_hover:

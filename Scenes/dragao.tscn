@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cfndxnjvnbfi5"]
 
-[ext_resource type="Script" uid="uid://bqkjtthg3iowb" path="res://dragao.gd" id="1_jjkpu"]
+[ext_resource type="Script" uid="uid://bqkjtthg3iowb" path="res://Scripts/dragao.gd" id="1_jjkpu"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_3wb61"]
 

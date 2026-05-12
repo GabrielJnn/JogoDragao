@@ -1,0 +1,502 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://Scenes/dragao.tscn" id="1_6ba58"]
+[ext_resource type="Script" path="res://Scripts/mundo.gd" id="1_lgngo"]
+[ext_resource type="Script" path="res://Scripts/dragao.gd" id="3_yf8a8"]
+[ext_resource type="Texture2D" path="res://Textures/beautiful-skyscape-daytime.jpg" id="4_qxsm7"]
+[ext_resource type="PackedScene" path="res://Models/low-poly_terrain.glb" id="4_yf8a8"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_i8avv"]
+panorama = ExtResource("4_qxsm7")
+
+[sub_resource type="Sky" id="Sky_i8avv"]
+sky_material = SubResource("PanoramaSkyMaterial_i8avv")
+
+[sub_resource type="Environment" id="Environment_ibak7"]
+background_mode = 2
+background_energy_multiplier = 0.9
+sky = SubResource("Sky_i8avv")
+ambient_light_source = 3
+ambient_light_sky_contribution = 0.5
+tonemap_mode = 3
+tonemap_exposure = 0.9
+tonemap_white = 6.0
+ssao_enabled = true
+ssao_radius = 2.0
+ssil_enabled = true
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+glow_enabled = true
+glow_bloom = 0.05
+glow_blend_mode = 0
+fog_enabled = true
+fog_light_color = Color(0.6, 0.7, 0.8, 1)
+fog_sun_scatter = 0.2
+fog_density = 0.001
+fog_aerial_perspective = 0.3
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.002
+volumetric_fog_albedo = Color(0.9, 0.95, 1, 1)
+
+[sub_resource type="FogMaterial" id="FogMaterial_yf8a8"]
+density = 0.5601068
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_qxsm7"]
+density = 0.7299466
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_i8avv"]
+density = 1.4761276
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_ibak7"]
+density = 1.4779862
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_7j6if"]
+density = 1.3734702
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_has1v"]
+density = 1.4324353
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_m1vgi"]
+density = 0.728301
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_1bodn"]
+density = 0.6380507
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_6bs12"]
+density = 1.2452669
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_amofe"]
+density = 1.2050885
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_ppd06"]
+density = 0.7032999
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_w4e5f"]
+density = 1.245232
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_hppdt"]
+density = 0.9579206
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_rr27p"]
+density = 0.9212029
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_f3x5k"]
+density = 0.7531773
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_d67sf"]
+density = 0.72066927
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_btko3"]
+density = 1.1883154
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_27nup"]
+density = 0.5602553
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_r6gbd"]
+density = 0.7334044
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_su8pv"]
+density = 1.0987027
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_hnw35"]
+density = 1.0415
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_nmfx7"]
+density = 0.9263476
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_mcf1m"]
+density = 0.6817501
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_84eq0"]
+density = 1.1052583
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_2e4tf"]
+density = 1.0140176
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_fjmrn"]
+density = 0.7339448
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_g8igm"]
+density = 1.0944966
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_nmh1f"]
+density = 0.6066675
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_wwucr"]
+density = 0.63528
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_pl0kk"]
+density = 1.1056614
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_jfclk"]
+density = 0.8121346
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_fnw41"]
+density = 0.51486045
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_epo55"]
+density = 0.96616095
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_1dpdg"]
+density = 0.9932302
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_2u6jv"]
+density = 1.092554
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_2t8tb"]
+density = 0.7278214
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_nf2fw"]
+density = 0.9067984
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_lj2jb"]
+density = 0.6015367
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_wmopk"]
+density = 1.0873623
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[sub_resource type="FogMaterial" id="FogMaterial_b8o3q"]
+density = 1.4057391
+emission = Color(0.5, 0.5, 0.5, 1)
+edge_fade = 0.2
+
+[node name="Mundo" type="Node3D" unique_id=1589754471]
+script = ExtResource("1_lgngo")
+
+[node name="dragao" type="CharacterBody3D" parent="." unique_id=1104468449 instance=ExtResource("1_6ba58")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.719845, 100, 0.55547)
+script = ExtResource("3_yf8a8")
+
+[node name="Sol" type="DirectionalLight3D" parent="." unique_id=812785158]
+transform = Transform3D(0.8660254, -0.38302222, 0.32139382, 0, 0.64278764, 0.76604444, -0.5, -0.66341394, 0.5566704, 0, 500, 443.652)
+light_color = Color(0.85282516, 0.794633, 0.18084538, 1)
+light_energy = 0.302
+shadow_enabled = true
+shadow_bias = 0.05
+
+[node name="CeuAmbiente" type="WorldEnvironment" parent="." unique_id=2101019320]
+environment = SubResource("Environment_ibak7")
+
+[node name="Sketchfab_Scene" type="Node3D" parent="." unique_id=535490714 instance=ExtResource("4_yf8a8")]
+transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, -80, 5.977417)
+
+[node name="Sketchfab_model2" type="Node3D" parent="Sketchfab_Scene" unique_id=1317182172]
+transform = Transform3D(0.05, 0, 0, 0, 1.110223e-17, 0.05, 0, -0.05, 1.110223e-17, 0, 0, 0)
+
+[node name="Nuvem_0" type="FogVolume" parent="." unique_id=1958462894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 338.28613, 372.5998, 778.1008)
+size = Vector3(326.51575, 75.127525, 234.03958)
+shape = 0
+material = SubResource("FogMaterial_yf8a8")
+
+[node name="Nuvem_1" type="FogVolume" parent="." unique_id=1640207291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 684.40137, 227.39139, -745.81165)
+size = Vector3(202.93993, 78.11428, 276.0813)
+shape = 0
+material = SubResource("FogMaterial_qxsm7")
+
+[node name="Nuvem_2" type="FogVolume" parent="." unique_id=400063884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 910.5818, 398.7757, -646.1013)
+size = Vector3(109.072235, 60.81032, 178.25287)
+shape = 0
+material = SubResource("FogMaterial_i8avv")
+
+[node name="Nuvem_3" type="FogVolume" parent="." unique_id=624149358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -851.3212, 237.29185, 380.45435)
+size = Vector3(153.87564, 41.890686, 195.23065)
+shape = 0
+material = SubResource("FogMaterial_ibak7")
+
+[node name="Nuvem_4" type="FogVolume" parent="." unique_id=620244075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -292.31458, 269.156, 244.75464)
+size = Vector3(119.519615, 74.168594, 279.52124)
+shape = 0
+material = SubResource("FogMaterial_7j6if")
+
+[node name="Nuvem_5" type="FogVolume" parent="." unique_id=1550462102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 810.22205, 140.66652, -188.61774)
+size = Vector3(255.30202, 20.645327, 228.17598)
+shape = 0
+material = SubResource("FogMaterial_has1v")
+
+[node name="Nuvem_6" type="FogVolume" parent="." unique_id=245287513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 501.07776, 341.03058, 363.188)
+size = Vector3(282.49976, 44.514725, 116.56792)
+shape = 0
+material = SubResource("FogMaterial_m1vgi")
+
+[node name="Nuvem_7" type="FogVolume" parent="." unique_id=1718652497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -644.7445, 369.19354, -349.86334)
+size = Vector3(157.99562, 27.84269, 303.48157)
+shape = 0
+material = SubResource("FogMaterial_1bodn")
+
+[node name="Nuvem_8" type="FogVolume" parent="." unique_id=2029570246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -619.77075, 580.5161, -291.7049)
+size = Vector3(236.40184, 23.499544, 200.90451)
+shape = 0
+material = SubResource("FogMaterial_6bs12")
+
+[node name="Nuvem_9" type="FogVolume" parent="." unique_id=663517532]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.48285, 373.5473, 380.484)
+size = Vector3(332.08704, 49.642574, 342.92175)
+shape = 0
+material = SubResource("FogMaterial_amofe")
+
+[node name="Nuvem_10" type="FogVolume" parent="." unique_id=253319009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 785.44556, 200.89784, -440.88135)
+size = Vector3(268.96002, 39.271347, 285.6761)
+shape = 0
+material = SubResource("FogMaterial_ppd06")
+
+[node name="Nuvem_11" type="FogVolume" parent="." unique_id=2089754338]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -606.1802, 331.78882, -296.86353)
+size = Vector3(120.75135, 24.244604, 232.14886)
+shape = 0
+material = SubResource("FogMaterial_w4e5f")
+
+[node name="Nuvem_12" type="FogVolume" parent="." unique_id=1195495964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 505.47253, 590.34814, -784.5841)
+size = Vector3(212.44833, 22.908127, 266.56097)
+shape = 0
+material = SubResource("FogMaterial_hppdt")
+
+[node name="Nuvem_13" type="FogVolume" parent="." unique_id=400828117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.96448, 576.9223, -301.2298)
+size = Vector3(131.16304, 69.02896, 349.13544)
+shape = 0
+material = SubResource("FogMaterial_rr27p")
+
+[node name="Nuvem_14" type="FogVolume" parent="." unique_id=2096669992]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -752.42834, 533.8985, 755.3074)
+size = Vector3(235.98013, 34.569305, 204.98604)
+shape = 0
+material = SubResource("FogMaterial_f3x5k")
+
+[node name="Nuvem_15" type="FogVolume" parent="." unique_id=1015083594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.46594, 432.38077, -863.8699)
+size = Vector3(127.17334, 53.89171, 273.20184)
+shape = 0
+material = SubResource("FogMaterial_d67sf")
+
+[node name="Nuvem_16" type="FogVolume" parent="." unique_id=1506901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -237.56952, 150.24649, 714.0071)
+size = Vector3(163.95987, 64.32909, 263.13388)
+shape = 0
+material = SubResource("FogMaterial_btko3")
+
+[node name="Nuvem_17" type="FogVolume" parent="." unique_id=290164804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -888.2291, 356.79004, -614.24915)
+size = Vector3(294.3905, 22.321295, 195.47263)
+shape = 0
+material = SubResource("FogMaterial_27nup")
+
+[node name="Nuvem_18" type="FogVolume" parent="." unique_id=1697022093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -540.615, 332.10284, -309.95044)
+size = Vector3(341.68634, 75.10579, 263.52875)
+shape = 0
+material = SubResource("FogMaterial_r6gbd")
+
+[node name="Nuvem_19" type="FogVolume" parent="." unique_id=264823537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -330.12018, 594.11304, 174.94067)
+size = Vector3(309.52618, 41.261963, 242.65144)
+shape = 0
+material = SubResource("FogMaterial_su8pv")
+
+[node name="Nuvem_20" type="FogVolume" parent="." unique_id=1202618203]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 848.76904, 585.6588, -612.8329)
+size = Vector3(112.05339, 74.957115, 111.353546)
+shape = 0
+material = SubResource("FogMaterial_hnw35")
+
+[node name="Nuvem_21" type="FogVolume" parent="." unique_id=154619866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 710.9645, 478.67386, 860.07983)
+size = Vector3(188.31454, 44.25948, 268.2005)
+shape = 0
+material = SubResource("FogMaterial_nmfx7")
+
+[node name="Nuvem_22" type="FogVolume" parent="." unique_id=133855330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 228.17896, 408.11505, -914.79407)
+size = Vector3(194.896, 39.89992, 291.70947)
+shape = 0
+material = SubResource("FogMaterial_mcf1m")
+
+[node name="Nuvem_23" type="FogVolume" parent="." unique_id=798679401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -774.4981, 403.39084, -244.49713)
+size = Vector3(252.48268, 69.68851, 229.75237)
+shape = 0
+material = SubResource("FogMaterial_84eq0")
+
+[node name="Nuvem_24" type="FogVolume" parent="." unique_id=1320644360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.26709, 413.69495, -472.33508)
+size = Vector3(270.01428, 69.6216, 275.76166)
+shape = 0
+material = SubResource("FogMaterial_2e4tf")
+
+[node name="Nuvem_25" type="FogVolume" parent="." unique_id=1480142190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -130.33197, 224.08383, 320.3778)
+size = Vector3(206.05933, 65.70053, 219.66818)
+shape = 0
+material = SubResource("FogMaterial_fjmrn")
+
+[node name="Nuvem_26" type="FogVolume" parent="." unique_id=1892807732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.85327, 291.33264, -599.5528)
+size = Vector3(150.12662, 76.33858, 126.560104)
+shape = 0
+material = SubResource("FogMaterial_g8igm")
+
+[node name="Nuvem_27" type="FogVolume" parent="." unique_id=1887526446]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -994.56177, 250.03201, -583.6554)
+size = Vector3(229.27074, 75.01062, 170.3403)
+shape = 0
+material = SubResource("FogMaterial_nmh1f")
+
+[node name="Nuvem_28" type="FogVolume" parent="." unique_id=721974109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 357.64648, 458.48767, -662.7652)
+size = Vector3(148.1324, 42.689323, 188.81607)
+shape = 0
+material = SubResource("FogMaterial_wwucr")
+
+[node name="Nuvem_29" type="FogVolume" parent="." unique_id=1211460687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 643.6732, 244.39114, 122.1427)
+size = Vector3(316.30402, 50.786083, 309.56427)
+shape = 0
+material = SubResource("FogMaterial_pl0kk")
+
+[node name="Nuvem_30" type="FogVolume" parent="." unique_id=2124986907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -736.9954, 370.25748, -899.5807)
+size = Vector3(254.87343, 37.685207, 200.28917)
+shape = 0
+material = SubResource("FogMaterial_jfclk")
+
+[node name="Nuvem_31" type="FogVolume" parent="." unique_id=598253371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -917.04956, 413.6633, -514.2384)
+size = Vector3(236.98436, 60.056313, 213.88846)
+shape = 0
+material = SubResource("FogMaterial_fnw41")
+
+[node name="Nuvem_32" type="FogVolume" parent="." unique_id=178183822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130.09985, 211.32423, 46.454468)
+size = Vector3(265.3382, 44.726784, 162.5001)
+shape = 0
+material = SubResource("FogMaterial_epo55")
+
+[node name="Nuvem_33" type="FogVolume" parent="." unique_id=826115206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 508.78015, 596.0947, -435.28967)
+size = Vector3(194.23177, 47.778755, 308.07147)
+shape = 0
+material = SubResource("FogMaterial_1dpdg")
+
+[node name="Nuvem_34" type="FogVolume" parent="." unique_id=1845592443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -923.3801, 135.36322, 926.2844)
+size = Vector3(206.03668, 48.70385, 265.67673)
+shape = 0
+material = SubResource("FogMaterial_2u6jv")
+
+[node name="Nuvem_35" type="FogVolume" parent="." unique_id=1229252575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -565.54706, 551.08795, 3.9368896)
+size = Vector3(125.93466, 46.63214, 207.57753)
+shape = 0
+material = SubResource("FogMaterial_2t8tb")
+
+[node name="Nuvem_36" type="FogVolume" parent="." unique_id=1041058760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -754.71277, 420.90787, 176.828)
+size = Vector3(297.7096, 61.551155, 229.50293)
+shape = 0
+material = SubResource("FogMaterial_nf2fw")
+
+[node name="Nuvem_37" type="FogVolume" parent="." unique_id=1003085995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -520.9724, 489.7326, -445.0005)
+size = Vector3(262.35587, 47.506706, 254.98544)
+shape = 0
+material = SubResource("FogMaterial_lj2jb")
+
+[node name="Nuvem_38" type="FogVolume" parent="." unique_id=1779483169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.743164, 230.07056, 583.4131)
+size = Vector3(173.00854, 72.49356, 268.57672)
+shape = 0
+material = SubResource("FogMaterial_wmopk")
+
+[node name="Nuvem_39" type="FogVolume" parent="." unique_id=988021694]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 504.29248, 332.81134, -58.675537)
+size = Vector3(289.00082, 32.187225, 275.8573)
+shape = 0
+material = SubResource("FogMaterial_b8o3q")

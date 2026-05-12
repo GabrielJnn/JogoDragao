@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c4menu0scene1"]
+
+[ext_resource type="Script" uid="uid://bpoyey8yrukrh" path="res://Scripts/menu.gd" id="1_menu"]
+[ext_resource type="PackedScene" uid="uid://ci6vwt67gvebk" path="res://Models/low-poly_terrain.glb" id="2_xhh6f"]
+
+[node name="Menu" type="Control" unique_id=1831278513]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_menu")
+
+[node name="Sketchfab_Scene" parent="." unique_id=535490714 instance=ExtResource("2_xhh6f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5329735, 0.49355745, -1.7211614)

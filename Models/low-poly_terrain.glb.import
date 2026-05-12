@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://by8j03c5oywut"
-path="res://.godot/imported/Dragon.glb-0cad6f075e9506971a96809cfc0bdeca.scn"
+uid="uid://ci6vwt67gvebk"
+path="res://.godot/imported/low-poly_terrain.glb-62a07d7e39294e7ad001a8a0354bcd8b.scn"
 
 [deps]
 
-source_file="res://Dragon.glb"
-dest_files=["res://.godot/imported/Dragon.glb-0cad6f075e9506971a96809cfc0bdeca.scn"]
+source_file="res://Models/low-poly_terrain.glb"
+dest_files=["res://.godot/imported/low-poly_terrain.glb-62a07d7e39294e7ad001a8a0354bcd8b.scn"]
 
 [params]
 
